@@ -1,11 +1,10 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('content')
-<div class="jumbotron">
-  <h1>PHP Outlook Sample</h1>
-  <p>This example shows how to get an OAuth token from Azure using the <a href="https://docs.microsoft.com/ja-jp/azure/active-directory/develop/active-directory-v2-protocols-oauth-code" target="_blank">authorization code grant flow</a> and to use that token to make calls to the Outlook APIs in the <a href="https://developer.microsoft.com/ja-jp/graph/" target="_blank">Microsoft Graph</a>.</p>
-  <p>
-    <a class="btn btn-lg btn-primary" href="/signin" role="button" id="connect-button">Connect to Outlook</a>
-  </p>
+<div>
+    <p class="ms-font-xl">Use the button below to connect to Microsoft Graph.</p>
+    <button id="connect_button" class="ms-Button" onclick="location.href='/oauth.php'">
+        <span class="ms-Button-label">Connect to Microsoft Graph</span>
+    </button>
 </div>
 @endsection
