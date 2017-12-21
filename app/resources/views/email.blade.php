@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
+<?php
+if (isset($_GET['query']) === TRUE) {
+    $query  = htmlspecialchars($_GET['query'], ENT_QUOTES, 'UTF-8');
+}
+?>
+
 @section('content')
+
 <form action="/email", method="POST">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="ms-Grid-col ms-u-mdPush1 ms-u-md9 ms-u-lgPush1 ms-u-lg6">
@@ -23,4 +30,14 @@
         @endif
     </div>
 </form>
+
+<form action="https://graph.microsoft.com/v1.0/me/", method="GET">
+
+<input type="text" name="query" value="{{ csrf_token() }}">
+<input type="submit" value="‘—M">
+
+<?php if(isset($_GET['displayName']) === TRUE) echo $_GET['displayName']; ?>
+
+</form>
+
 @endsection

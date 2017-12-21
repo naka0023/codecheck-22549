@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP App Sample</title>
+		<title>EventScheduler</title>
 		<link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.css">
 		<link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.components.css">
 		<link rel="stylesheet" href="{{ asset('/css/app.css') }}">
@@ -13,7 +13,7 @@
 					<div class="ms-NavBar">
 						<ul class="ms-NavBar-items">
 							<li class="navbar-header">
-								Microsoft Graph sample
+								Event Scheduler
 							</li>
 						</ul>
 					</div>
