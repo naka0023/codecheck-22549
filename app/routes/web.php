@@ -17,3 +17,8 @@ Route::get('/', function () {
 Route::get('/oauth.php', 'LoginController@oauth');
 Route::get('/email', 'EmailController@showUserInfo');
 Route::post('/email', 'EmailController@sendEmail');
+
+Route::get('/helo', 'HeloController@getIndex');
+
+Route::get('/helo', 'HeloController@postIndex');
+Route::post('/helo', 'HeloController@postIndex');

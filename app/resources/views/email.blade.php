@@ -31,7 +31,7 @@ if (isset($_GET['query']) === TRUE) {
     </div>
 </form>
 
-<form action="https://graph.microsoft.com/v1.0/me/", method="GET">
+<form action="/nakanaka", method="GET">
 
 <input type="text" name="query" value="{{ csrf_token() }}">
 <input type="submit" value="‘—M">
