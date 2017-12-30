@@ -1,3 +1,5 @@
 # ignore installed NodeJS modules, which are often very large.
 node_modules/
 package-lock.json
+
+.env
